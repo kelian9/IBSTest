@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import routes from './routes';
 
 const AppRouter: React.FC = () => {
@@ -14,13 +14,13 @@ const AppRouter: React.FC = () => {
 	}, []);
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				{Object.entries(pathToComponentMap).map(([path, Component]) => (
 					<Route key={path} path={path} element={<Component />} />
 				))}
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
 
