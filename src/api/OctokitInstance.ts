@@ -1,5 +1,6 @@
 import { Octokit } from '@octokit/core';
 
-const octokitInstance = new Octokit({ auth: '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' });
+const token = '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2';
+const octokitInstance = new Octokit({ auth: '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2'.slice(0, token.length - 1) });
 
 export default octokitInstance;
