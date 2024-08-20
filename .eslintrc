@@ -1,0 +1,143 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"es2017": true
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json",
+		"jsx": true
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"react",
+		"prettier"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"rules": {
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/no-empty-interface": "off",
+		"@typescript-eslint/prefer-regexp-exec": "off",
+		"@typescript-eslint/await-thenable": "off",
+		"@typescript-eslint/no-unsafe-call": "off",
+		"@typescript-eslint/no-floating-promises": "off",
+		"@typescript-eslint/restrict-plus-operands": "off",
+		"@typescript-eslint/no-unsafe-return": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/restrict-template-expressions": "off",
+		"@typescript-eslint/no-extra-semi": "off",
+		"@typescript-eslint/naming-convention": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/no-implied-eval": "off",
+		"@typescript-eslint/no-unsafe-assignment": "off",
+		"@typescript-eslint/no-unsafe-member-access": "off",
+		"@typescript-eslint/ban-types": "off",
+		// Блок включаемых правил
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-non-null-assertion": "error",
+		"@typescript-eslint/no-use-before-define": "error",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"args": "after-used"
+			}
+		],
+		"eqeqeq": [
+			"error",
+			"always",
+			{
+				"null": "ignore"
+			}
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"dot-location": [
+			"error",
+			"property"
+		],
+		"no-void": "error",
+		"no-var": "error",
+		"radix": "error",
+		"max-len": [
+			"error",
+			{
+				"code": 120
+			}
+		],
+		"react/no-access-state-in-setstate": "error",
+		"react/jsx-uses-vars": "error",
+		"react/jsx-uses-react": "error",
+		"react/destructuring-assignment": "error",
+		"react/no-did-mount-set-state": "error",
+		"react/no-did-update-set-state": "error",
+		"react/no-direct-mutation-state": "error",
+		// "react/no-multi-comp": "error",
+		"react/no-render-return-value": "error",
+		"react/no-this-in-sfc": "error",
+		"react/prefer-es6-class": [
+			"error",
+			"always"
+		],
+		"react/react-in-jsx-scope": "error",
+		"react/require-render-return": "error",
+		"react/no-unused-state": "error",
+		"react/jsx-boolean-value": "error",
+		"react/jsx-closing-tag-location": "error",
+		"react/jsx-closing-bracket-location": [
+			"error",
+			{
+				"nonEmpty": "tag-aligned",
+				"selfClosing": "tag-aligned"
+			}
+		],
+		"react/jsx-curly-brace-presence": [
+			"error",
+			{
+				"props": "never",
+				"children": "never"
+			}
+		],
+		"react/jsx-equals-spacing": [
+			"error",
+			"never"
+		],
+		"react/jsx-first-prop-new-line": [
+			"error",
+			"multiline"
+		],
+		"react/jsx-fragments": [
+			"error",
+			"syntax"
+		],
+		"react/jsx-no-script-url": "error",
+		"react/jsx-props-no-multi-spaces": "error",
+		"react/jsx-tag-spacing": "error",
+		"react/jsx-sort-props": [
+			"error",
+			{
+				"callbacksLast": true,
+				"shorthandFirst": true,
+				"noSortAlphabetically": true,
+				"reservedFirst": true
+			}
+		],
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		]
+	}
+}
