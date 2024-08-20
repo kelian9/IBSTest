@@ -29,6 +29,10 @@
 		"./cypress/**/*.{js,ts,jsx,tsx}": "eslint"
 	},
 	"pre-commit": "lint:staged",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kelian9/IBSTest.git"
+	},
 	"author": "kelian9",
 	"browserslist": [
 		"last 2 versions",
